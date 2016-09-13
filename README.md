@@ -20,6 +20,11 @@ npm install node-ews
 - Added authentication error handling
 - Added WSDL validation error handling
 - Added logic to determine if XSD and WDSL files have already been downloaded rather than attempting download on each run
+- Added abilityy to specify Exchange Soap Header in ews.run() function
+
+#### Updates in version 2.2.0 (dev)
+
+- Added basic auth
 
 #### About
 A extension of node-soap with httpntlm to make queries to Microsoft's Exchange Web Service API work.
@@ -177,6 +182,13 @@ ews.run(ewsFunction, ewsArgs, ewsSoapHeader)
     console.log(err.stack);
   });
 
+```
+
+#### Enable Basic Auth instead of NTLM:
+
+```js
+var ews = new EWS(username, password, host);
+ews.auth = 'basic';
 ```
 
 #### Disable SSL verification:
