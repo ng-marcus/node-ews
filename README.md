@@ -20,7 +20,7 @@ npm install node-ews
 - Added authentication error handling
 - Added WSDL validation error handling
 - Added logic to determine if XSD and WDSL files have already been downloaded rather than attempting download on each run
-- Added abilityy to specify Exchange Soap Header in ews.run() function
+- Added ability to specify Exchange Soap Header in ews.run() function
 
 #### Updates in version 2.2.0 (dev)
 
